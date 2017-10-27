@@ -1,0 +1,137 @@
+.footer
+  background: $gradient, url("../img/footer.jpg") center no-repeat
+  p, h4, a
+    color: #fff
+  p
+    opacity: .7
+    letter-spacing: 0.35px
+    line-height: 26px
+  h4, a
+    text-transform: uppercase
+  &__content
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 70px
+    &--item:nth-child(1)
+      .logo
+        background: url("../img/logo.png")
+        width: 128px
+        height: 50px
+        background-size: cover
+      p
+        padding: 30px 0 85px
+      .help-btn
+        font-size: 14px
+        font-weight: 300
+        button
+          transition: color .3s
+          background: transparent
+          color: #fff
+          padding: 0
+          justify-self: start
+          margin-right: 20px
+          &:hover
+            color: $main
+    &--item:nth-child(2), &--item:nth-child(3)
+      h4
+        margin-bottom: 28px
+        height: 50px
+        line-height: 58px
+    &--item:nth-child(2)
+      p
+        padding-left: 30px
+        position: relative
+        margin-bottom: 30px
+        max-width: 100%
+      .location
+        position: relative
+        &:before
+          content: ''
+          position: absolute
+          background: url("../img/location.png")
+          width: 14px
+          height: 19px
+          left: 0
+          top: 3px
+      .phone
+        &:before
+          content: ''
+          position: absolute
+          background: url("../img/phone.png")
+          width: 17px
+          height: 17px
+          left: 0
+          top: 3px
+    &--item:nth-child(3)
+      position: relative
+      input
+        font-size: 14px
+        padding: 10px
+        font-weight: 300
+        letter-spacing: .7px
+        height: 48px
+        width: calc(100% - 76px)
+        background: transparent
+        border: 1px solid #9994AE
+        color: #9994AE
+        vertical-align: middle
+        &::placeholder
+          color: #9994AE
+      button
+        background-color: #fff
+        opacity: .5
+        width: 72px
+        height: 48px
+        vertical-align: middle
+        position: relative
+        border: 1px solid #fff
+        transition: all .3s
+        &:hover
+          background: $main
+        img
+          position: absolute
+          left: calc(50% - 12.5px)
+          top: calc(50% - 12.5px)
+      .soc-buttons
+        padding: 25px 0 80px
+        font-size: 0
+        a
+          background: transparent
+          border: 1px solid #fff
+          border-radius: 50%
+          margin-right: 10px
+          position: relative
+          display: inline-block
+          height: 46px
+          width: 46px
+          &:nth-child(1):hover
+            background-color: #3B5998
+          &:nth-child(2):hover
+            background-color: #36B9FF
+          &:nth-child(3):hover
+            background-color: #EA4C89
+          &:nth-child(4):hover
+            background: linear-gradient( #400080, transparent),linear-gradient(300deg, #d047d1, #ff0000, #ffff00)
+          &:nth-child(5):hover
+            background-color: #F4511E
+          &:nth-child(6):hover
+            background: linear-gradient(to bottom, #e52c27 1%,#c1181d 100%,#7db9e8 100%)
+          .fa
+            position: absolute
+            font-size: 24px
+            top: calc(50% - 12px)
+          .fa-facebook
+            left: calc(50% - 7.5px)
+          .fa-twitter
+            left: calc(50% - 9.5px)
+          .fa-dribbble
+            left: calc(50% - 9.5px)
+          .fa-instagram
+            left: calc(50% - 9.5px)
+          .fa-google-plus
+            left: calc(50% - 14px)
+          .fa-youtube-play
+            left: calc(50% - 11.5px)
+      p
+        position: absolute
+        right: 0
+        bottom: 0

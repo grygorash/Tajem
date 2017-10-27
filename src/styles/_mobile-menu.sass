@@ -1,0 +1,76 @@
+.slideout-menu
+  display: none
+  right: -250px
+  justify-self: end
+  position: fixed
+  width: 250px
+  transition: all .4s
+  padding: 35px 40px 0 45px
+  height: 100vh
+  text-transform: uppercase
+  background: rgba(51,34,89,.9)
+  z-index: 3
+  .button
+    width: 100%
+    margin-top: 10px
+  ul
+    li
+      cursor: pointer
+      transition: all .3s
+      margin-bottom: 10px
+      border-bottom: 1px solid $main
+      &:hover
+        color: $main
+  .icon
+    position: absolute
+    cursor: pointer
+    width: 20px
+    height: 24px
+    left: -50px
+    padding: 20px 25px
+    background: rgba(51,34,89,.7)
+    top: 0
+    transition: all .4s
+    &:hover
+      .hamburger
+        background-color: $main
+        &:before, &:after
+          background-color: $main
+    .hamburger
+      width: 20px
+      height: 2px
+      position: absolute
+      top: calc(50% - 2px)
+      left: calc(50% - 10px)
+      transition: all .4s
+      background-color: #fff
+      &:before, &:after
+        position: absolute
+        content: ''
+        width: 20px
+        height: 2px
+        background-color: #fff
+        transition: all .4s
+      &:before
+        top: -7px
+        transform: rotate(0)
+      &:after
+        top: 7px
+        transform: rotate(0)
+  .icon.active
+    .hamburger
+      background-color: transparent
+      &:before
+        transform: rotate(45deg)
+        top: 0
+      &:after
+        transform: rotate(135deg)
+        top: 0
+.slideout-menu.show
+  right: 0
+  .icon
+    left: 0
+    background: transparent
+.body-overflow
+  overflow-y: hidden
+

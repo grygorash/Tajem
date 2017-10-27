@@ -1,0 +1,24 @@
+.player
+  background: linear-gradient$gradient, url(../img/about-player.jpg) center no-repeat
+  width: 100%
+  height: 660px
+  justify-items: center
+  align-items: center
+  &__button
+    width: 101px
+    height: 101px
+    cursor: pointer
+    border-radius: 50%
+    background: url("../img/button-play.png")
+    transition: background .3s
+    position: relative
+    &:hover
+      background-image: url(../img/button-play-hover.png)
+    &:after
+      content: 'WATCH OUR STORY'
+      position: absolute
+      color: #fff
+      width: 150px
+      text-align: center
+      bottom: -35px
+      left: -25px

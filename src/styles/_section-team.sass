@@ -1,0 +1,35 @@
+.team
+  padding: 70px 0
+  color: #fff
+  background: linear-gradient(to right,rgba(9,5,47,.85) 0,rgba(49,29,94,.85) 100%),url(../img/team.jpg) center bottom no-repeat
+  .header-container
+    h3, p
+      color: #fff
+    p
+      &:after
+        background-color: #fff
+  &__content
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 20px
+    max-width: 940px
+    margin: 0 auto
+    text-align: center
+    text-transform: uppercase
+    &--item
+      border: 1px solid #fff
+      *
+        padding-bottom: 10px
+      h4
+        padding-bottom: 0px
+      p
+        opacity: .7
+        font-size: 13px
+        font-weight: 300
+
+  &__footer
+    text-align: center
+    padding-top: 74px
+    p
+      padding-bottom: 20px
+      opacity: .7
+      font-weight: 300

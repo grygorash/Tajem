@@ -1,0 +1,39 @@
+.contact
+  grid-template-columns: 1fr 1fr
+  h3
+    padding-bottom: 35px
+  &__left
+    margin-right: 100px
+    input, textarea, button
+      display: block
+    input, textarea
+      opacity: .5
+      width: 100%
+      color: $grey
+      margin-bottom: 20px
+      border: 1px solid $grey
+      letter-spacing: .7px
+      transition: all .3s
+      &:hover, &:focus
+        border: 1px solid $main
+    input
+      height: 47px
+      padding: 0 20px
+    textarea
+      padding: 10px 20px
+      height: 250px
+      resize: none
+    .button
+      &:hover
+        color: #fff
+  &__right
+    &--content
+      grid-template-columns: 162px 162px
+      grid-column-gap: 150px
+      grid-row-gap: 30px
+      .content-item
+        height: 70px
+        display: grid
+        align-items: center
+        justify-items: center
+

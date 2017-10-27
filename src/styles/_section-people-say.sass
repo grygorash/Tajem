@@ -1,0 +1,62 @@
+.people-say
+  background: $gradient, url("../img/people-say.jpg") center bottom no-repeat
+  color: #fff
+  padding: 70px 20px
+  text-align: center
+  p
+    opacity: .75
+  &__content
+    padding: 70px 50px
+    max-width: 770px
+    margin: 0 auto
+    position: relative
+    .title
+      background: url("../img/quotes.png")
+      width: 32px
+      height: 26px
+      position: absolute
+      left: calc(50% - 16px)
+      top: -10px
+    p
+      font-size: 16px
+      line-height: 26px
+      font-family: "Playfair Display", sans-serif
+  &__footer
+    &--slider
+      h4
+        text-transform: uppercase
+      p
+        font-size: 13px
+        font-weight: 300
+        text-transform: uppercase
+        margin: 10px 0 25px
+      .carousel
+        max-width: 390px
+        position: relative
+        margin: 0 auto
+        img
+          vertical-align: middle
+          width: 45px
+          height: 45px
+          cursor: pointer
+          &:not(:nth-child(1))
+            margin-left: 10px
+        .active-img
+          width: 70px
+          height: 70px
+        .prev, .next
+          width: 11px
+          height: 21px
+          cursor: pointer
+          transition: all .3s
+          position: absolute
+          top: calc(50% - 10.5px)
+        .prev
+          background: url("../img/slider-arrow-left.png")
+          &:hover
+            background: url("../img/slider-arrow-left-hover.png")
+        .next
+          background: url("../img/slider-arrow-right.png")
+          right: 0
+          &:hover
+            background: url("../img/slider-arrow-right-hover.png")

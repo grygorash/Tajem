@@ -1,0 +1,61 @@
+$main: #00e0d0
+$hover: #2D2749
+$grey: #413d4b
+$gradient: linear-gradient(to right, rgba(9, 5, 47, .85) 0%, rgba(49, 29, 94, .85) 100%)
+body
+  font-family: 'Roboto', sans-serif
+  line-height: 22px
+  max-width: 1920px
+  margin: 0 auto
+
+.play-font
+  font-family: 'Playfair Display', serif
+  font-weight: bold
+  text-transform: uppercase
+  letter-spacing: 1.1px
+  font-size: 28px
+p
+  font-size: 16px
+.button
+  width: 140px
+  height: 40px
+  color: $main
+  font-size: 16px
+  text-transform: uppercase
+  border: 1px solid $main
+  background-color: transparent
+  transition: all .3s
+  margin: 0 auto
+  &:hover
+    color: $hover
+    border: 1px solid $main
+    background-color: $main
+.container
+  padding: 70px 20px
+  max-width: 1200px
+  margin: 0 auto
+.header-container
+  text-align: center
+  font-family: "Playfair Display", sans-serif
+  h3
+    color: $grey
+    letter-spacing: 1.1px
+    font-size: 26px
+    font-weight: 700
+  p
+    opacity: 0.75
+    color: $grey
+    font-size: 16px
+    letter-spacing: 1.05px
+    padding: 15px 0 65px
+    position: relative
+    text-transform: none
+    &:after
+      position: absolute
+      content: ''
+      width: 53px
+      height: 2px
+      background-color: $grey
+      opacity: 0.3
+      bottom: 45px
+      left: calc(50% - 26.5px)
