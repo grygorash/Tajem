@@ -61,7 +61,7 @@
             <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
                 sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
                 sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-            <button class="button uppercase" id="show-modal">learn more</button>
+            <button class="button uppercase show-modal">learn more</button>
         </div>
         <div class="scroll-down">
             <div class="mouse">
@@ -81,7 +81,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda debitis dicta eius illum magnam, magni
                 minima molestiae nobis, officiis quasi quia quibusdam rem repellendus rerum saepe, tenetur ullam unde
                 vero!</p>
-            <button class="button">LEARN MORE</button>
+            <button class="button show-modal">LEARN MORE</button>
         </div>
     </div>
     <div class="player grid">
@@ -144,7 +144,7 @@
         </div>
         <div class="team__footer">
             <p>Become part of our dream team, let’s join us ! </p>
-            <button class="button">WE ARE HIRING</button>
+            <button class="button show-modal">WE ARE HIRING</button>
         </div>
 </section>
 <section class="works" id="works">
@@ -197,11 +197,11 @@
 <section class="contact container grid" id="contact">
     <div class="contact__left">
         <h3 class="play-font">GIVE US A GOOD NEWS</h3>
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Subject">
-            <textarea placeholder="Your Message"></textarea>
+        <form required>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message" required></textarea>
             <button class="button">Submit</button>
         </form>
     </div>
