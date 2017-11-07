@@ -7,7 +7,7 @@ body
   line-height: 22px
   max-width: 1920px
   margin: 0 auto
-
+  overflow-x: hidden
 .play-font
   font-family: 'Playfair Display', serif
   font-weight: bold
@@ -120,3 +120,29 @@ p
       height: 100vh
 .active
   color: $main!important
+form
+  input, textarea, button
+    display: block
+  input, textarea
+    opacity: .5
+    width: 100%
+    color: $grey
+    margin-bottom: 20px
+    border: 1px solid $grey
+    letter-spacing: .7px
+    transition: all .3s
+    &:hover, &:focus
+      border: 1px solid $main
+  input
+    height: 47px
+    padding: 0 20px
+  textarea
+    padding: 10px 20px
+    height: 250px
+    resize: none
+  .button
+    &:hover
+      &:after
+        color: #fff
+        content: 'submit'
+        left: calc(50% - 28.5px)
