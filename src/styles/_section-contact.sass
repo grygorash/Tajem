@@ -25,7 +25,10 @@
       resize: none
     .button
       &:hover
-        color: #fff
+        &:after
+          color: #fff
+          content: 'submit'
+          left: calc(50% - 28.5px)
   &__right
     &--content
       grid-template-columns: 162px 162px

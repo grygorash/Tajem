@@ -31,12 +31,24 @@
   .team__content
     grid-template-columns: 1fr 1fr
     justify-items: center
-
+  .owl-carousel
+    height: 768px
+    .owl-stage-outer
+      height: 768px
+      .owl-item
+        height: 768px
 /* Medium Devices, Desktops */
 //@media only screen and (max-width: 992px)
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
+  .header__top--nav
+    grid-template-columns: 1fr
+    justify-items: center
+  .slideout-menu
+    display: block
+  .menu ul
+    display: none
   .team__content
     grid-template-columns: 1fr 1fr
     justify-items: center
@@ -88,13 +100,6 @@
 @media only screen and (max-width: 736px)
   .player
     height: 300px
-  .header__top--nav
-    grid-template-columns: 1fr
-    justify-items: center
-  .slideout-menu
-    display: block
-  .menu ul
-    display: none
   h2
     font-size: 22px !important
     line-height: 30px
@@ -104,6 +109,12 @@
     padding: 40px 20px
   .header, .header__slider, .header__top
     max-height: 650px
+  .owl-carousel
+    height: 650px
+    .owl-stage-outer
+      height: 650px
+      .owl-item
+        height: 650px
   .about
     grid-template-columns: 1fr
     justify-items: center

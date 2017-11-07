@@ -14,8 +14,10 @@ body
   text-transform: uppercase
   letter-spacing: 1.1px
   font-size: 28px
+
 p
   font-size: 16px
+
 .button
   width: 140px
   height: 40px
@@ -26,14 +28,41 @@ p
   background-color: transparent
   transition: all .3s
   margin: 0 auto
+  position: relative
+  z-index: 2
+  overflow: hidden
+  &:before
+    background-color: $main
+    position: absolute
+    content: ''
+    width: 147px
+    height: 64px
+    top: -13px
+    left: -210px
+    z-index: 1
+    transition: all .5s
+    transform: rotate(10deg)
+  &:after
+    position: absolute
+    content: 'LEARN MORE'
+    color: $hover
+    opacity: 0
   &:hover
     color: $hover
     border: 1px solid $main
-    background-color: $main
+    z-index: 2
+    &:before
+      left: -7px
+    &:after
+      left: calc(50% - 48.5px)
+      z-index: 2
+      opacity: 1
+
 .container
   padding: 70px 20px
   max-width: 1200px
   margin: 0 auto
+
 .header-container
   text-align: center
   font-family: "Playfair Display", sans-serif
@@ -59,3 +88,35 @@ p
       opacity: 0.3
       bottom: 45px
       left: calc(50% - 26.5px)
+
+.header__top--nav.fixed
+  position: fixed!important
+  top: 0!important
+  background-color: #332259
+  width: 100%
+  max-width: 100%
+  z-index: 9999
+  padding: 5px 50px
+.owl-carousel
+  z-index: 0!important
+  height: 100vh
+  //.owl-dots
+  //  position: absolute
+  //  left: calc(50% - 51px)
+  //  bottom: 10px
+  //  z-index: 9999
+  //  .owl-dot
+  //    display: inline-block
+  //    background-color: #fff
+  //    width: 12px
+  //    height: 12px
+  //    margin-left: 10px
+  //    border-radius: 50%
+  //  .owl-dot.active
+  //    background-color: $main
+  .owl-stage-outer
+    height: 100vh
+    .owl-item
+      height: 100vh
+.active
+  color: $main!important
