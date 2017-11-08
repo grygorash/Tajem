@@ -267,5 +267,16 @@
         <button class="button">Submit</button>
     </form>
 </div>
+
+<script>
+    //Mobile menu
+    $(document).ready(function () {
+        $('.icon').click(function () {
+            $('.icon').toggleClass('active-icon');
+            $('.slideout-menu').toggleClass('show');
+            $('body').toggleClass('body-overflow');
+        })
+    })
+</script>
 </body>
 </html>

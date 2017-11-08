@@ -1,10 +1,11 @@
 $(document).ready(function () {
 
-    //Mobile menu
-    $('.icon').click(function () {
-        $('.icon').toggleClass('active');
-        $('.slideout-menu').toggleClass('show');
-        $('body').toggleClass('body-overflow');
+    //Pre Loader
+    $(window).on('load', function () {
+        var $preloader = $('#page-preloader'),
+            $spinner = $preloader.find('.spinner');
+        $spinner.fadeOut();
+        $preloader.delay(350).fadeOut('slow');
     });
 
     //Sticky navigation
@@ -85,12 +86,5 @@ $(document).ready(function () {
         $('.b-modal').click(function () {
             $('body').removeClass('body-overflow');
         });
-    });
-//Pre Loader
-    $(window).on('load', function () {
-        var $preloader = $('#page-preloader'),
-            $spinner   = $preloader.find('.spinner');
-        $spinner.fadeOut();
-        $preloader.delay(350).fadeOut('slow');
     });
 });

@@ -24,5 +24,16 @@
 //= _section-contact.html
 //= _footer.html
 //= _modal.html
+
+<script>
+    //Mobile menu
+    $(document).ready(function () {
+        $('.icon').click(function () {
+            $('.icon').toggleClass('active-icon');
+            $('.slideout-menu').toggleClass('show');
+            $('body').toggleClass('body-overflow');
+        })
+    })
+</script>
 </body>
 </html>
