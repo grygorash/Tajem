@@ -5,58 +5,92 @@
   text-align: center
   p
     opacity: .75
-  &__content
-    padding: 70px 50px
-    max-width: 770px
+  &__top
+    .quotes
+    width: 32px
+    height: 26px
+    background: url("../img/quotes.png")
     margin: 0 auto
-    position: relative
-    .title
-      background: url("../img/quotes.png")
-      width: 32px
-      height: 26px
-      position: absolute
-      left: calc(50% - 16px)
-      top: -10px
-    p
-      font-size: 16px
-      line-height: 26px
-      font-family: "Playfair Display", sans-serif
-  &__footer
-    &--slider
-      h4
-        text-transform: uppercase
-      p
-        font-size: 13px
-        font-weight: 300
-        text-transform: uppercase
-        margin: 10px 0 25px
-      .carousel
-        max-width: 390px
+  &__slider.owl-carousel
+    max-width: 710px
+    margin: 0 auto
+    height: 100%
+    .owl-stage-outer
+      height: 100%
+      .owl-item
+        max-width: 710px
+        color: #fff
+        height: 100%
+        p
+          font-size: 16px
+          line-height: 26px
+          font-family: "Playfair Display", sans-serif
+          text-transform: none
+          padding: 55px 20px 120px
+    .owl-nav
+      position: relative
+      max-width: 400px
+      margin: 0 auto
+      .owl-prev, .owl-next
+        width: 11px
+        height: 21px
+        transition: all .3s
+        position: absolute
+        top: 10px
+      .owl-prev
+        background-image: url('../img/slider-arrow-left.png')
+        &:hover
+          background-image: url('../img/slider-arrow-left-hover.png')
+      .owl-next
+        right: 0
+        background-image: url('../img/slider-arrow-right.png')
+        &:hover
+          background-image: url('../img/slider-arrow-right-hover.png')
+    .owl-dots
+      height: 70px
+      .owl-dot
+        width: 45px
+        height: 45px
+        display: inline-block
+        background: url('../img/people-say-slider-1.png') no-repeat
+        background-size: cover
+        transition: all .3s
+        vertical-align: middle
+        margin-bottom: 25px
+        &:nth-child(2)
+          background: url('../img/people-say-slider-2.png')
+          background-size: cover
+        &:nth-child(3)
+          background: url('../img/people-say-slider-3.png')
+          background-size: cover
+        &:nth-child(4)
+          background: url('../img/people-say-slider-4.png')
+          background-size: cover
+        &:nth-child(5)
+          background: url('../img/people-say-slider-5.png')
+          background-size: cover
+      .owl-dot:not(:first-child)
+        margin-left: 10px
+      .owl-dot.active
+        width: 70px
+        height: 70px
         position: relative
-        margin: 0 auto
-        img
-          vertical-align: middle
-          width: 45px
-          height: 45px
-          cursor: pointer
-          &:not(:nth-child(1))
-            margin-left: 10px
-        .active-img
-          width: 70px
-          height: 70px
-        .prev, .next
-          width: 11px
-          height: 21px
-          cursor: pointer
-          transition: all .3s
+        margin-bottom: 0
+        &:after, &:before
           position: absolute
-          top: calc(50% - 10.5px)
-        .prev
-          background: url("../img/slider-arrow-left.png")
-          &:hover
-            background: url("../img/slider-arrow-left-hover.png")
-        .next
-          background: url("../img/slider-arrow-right.png")
-          right: 0
-          &:hover
-            background: url("../img/slider-arrow-right-hover.png")
+          text-transform: uppercase
+          color: #fff
+          width: 130px
+          left: calc(50% - 65px)
+          cursor: default
+        &:after
+          content: 'JANE GALADRIEL'
+          font-size: 16px
+          font-weight: 700
+          top: -80px
+        &:before
+          content: 'CEO TENGKUREP'
+          font-size: 13px
+          font-weight: 300
+          opacity: .75
+          top: -50px

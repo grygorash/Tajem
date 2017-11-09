@@ -29,6 +29,8 @@ $(document).ready(function () {
     //Carousel
     var owl = $('.owl-carousel');
     owl.owlCarousel({
+        nav: true,
+        navText: ["",""],
         items: 1,
         loop: true,
         margin: 0,

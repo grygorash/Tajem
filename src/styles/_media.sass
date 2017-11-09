@@ -4,7 +4,6 @@
   .contact__right--content
     justify-content: space-between
 /* Large Devices, Wide Screens */
-//@media only screen and (min-width: 1200px)
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1024px)
@@ -16,14 +15,16 @@
   ::-webkit-scrollbar-thumb
     border-radius: 10px
     background-color: #00E0D0
-
+@media only screen and (max-width: 1200px)
+  .footer__content--item:nth-child(3) .soc-buttons
+    padding-bottom: 10px
+  .footer__content--item:nth-child(3) .soc-buttons a
+    margin-right: 35px
 @media only screen and (max-width: 1024px)
   .header, .header__slider, .header__top
     height: 768px
   .works__content
     grid-template-columns: repeat(4, 1fr)
-  .footer__content--item:nth-child(3) .soc-buttons
-    width: 70%
   .footer__content
     grid-gap: 15px
   .team__content
@@ -40,6 +41,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
+  .footer__content--item:nth-child(3) .soc-buttons a
+    margin-right: 10px
+  .footer__content--item:nth-child(3) .soc-buttons
+    padding-bottom: 30px
   .header__top--nav
     grid-template-columns: 1fr
     justify-items: center
@@ -136,6 +141,8 @@
     grid-template-columns: 1fr 1fr
 
 @media only screen and (max-width: 414px)
+  #modal
+    min-width: 320px
   .expertise__content
     grid-template-columns: 1fr
   .expertise__content--item:not(:nth-child(6))
@@ -159,6 +166,13 @@
       padding-bottom: 20px
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)
+  .people-say__slider.owl-carousel .owl-dots .owl-dot
+    width: 35px
+    height: 35px
+    margin-bottom: 10px
+  .people-say__slider.owl-carousel .owl-dots .owl-dot.active
+    width: 45px
+    height: 45px
   .works__content
     grid-template-columns: 1fr
   .people-say__footer--slider .carousel .active-img
